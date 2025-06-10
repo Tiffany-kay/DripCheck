@@ -1,0 +1,76 @@
+# Root .gitignore for DripCheck monorepo
+
+# Dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Environment variables (CRITICAL - Contains API keys and secrets)
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+**/.env
+**/.env.*
+
+# Build outputs
+dist/
+build/
+out/
+drip-check-client/dist/
+drip-check-client/build/
+
+# Logs
+logs/
+*.log
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Editor directories and files
+.vscode/
+!.vscode/extensions.json
+!.vscode/tasks.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Cache directories
+.cache/
+.parcel-cache/
+.vite/
+.nyc_output/
+
+# Coverage
+coverage/
+*.lcov
+
+# Temporary files
+tmp/
+temp/
+
+# Deployment files (keep local only)
+*.ps1.bak
+deployment-secrets.txt
+
+# Local development only
+test-*.js
+debug-*.js
+local-*.md
+
+# Production deployment artifacts
+vercel-deployment.json
+railway-deployment.json

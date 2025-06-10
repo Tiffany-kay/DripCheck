@@ -1,0 +1,111 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Unica+One&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+  font-family: 'Poppins', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  
+  color-scheme: dark;
+  color: #f8f8f8;
+  background: linear-gradient(135deg, #0f0f0f 0%, #1a1a2e 50%, #16213e 100%);
+  
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* NeoDripWave Custom Styles */
+.glass-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+}
+
+.neon-glow {
+  box-shadow: 0 0 10px rgba(155, 93, 229, 0.3), 0 0 20px rgba(155, 93, 229, 0.2);
+}
+
+.neon-text {
+  text-shadow: 0 0 10px currentColor;
+}
+
+.outfit-card {
+  background: rgba(15, 15, 15, 0.8);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(155, 93, 229, 0.2);
+  transition: all 0.3s ease;
+}
+
+.outfit-card:hover {
+  border-color: rgba(155, 93, 229, 0.5);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(155, 93, 229, 0.3);
+}
+
+.background-slideshow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.1;
+}
+
+.background-slideshow img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  animation: slideshow 20s infinite;
+}
+
+.background-slideshow img:nth-child(1) { animation-delay: 0s; }
+.background-slideshow img:nth-child(2) { animation-delay: 5s; }
+.background-slideshow img:nth-child(3) { animation-delay: 10s; }
+.background-slideshow img:nth-child(4) { animation-delay: 15s; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(15, 15, 15, 0.5);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #9b5de5, #00f0ff);
+  border-radius: 3px;
+}
+
+/* Button Styles */
+.btn-primary {
+  background: linear-gradient(135deg, #9b5de5, #00f0ff);
+  border: none;
+  color: white;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(155, 93, 229, 0.4);
+}

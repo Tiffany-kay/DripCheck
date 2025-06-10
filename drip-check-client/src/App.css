@@ -1,0 +1,158 @@
+/* NeoDripWave App Styles */
+
+/* Modal Styles */
+.modal-backdrop {
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(5px);
+}
+
+.upload-modal {
+  background: rgba(15, 15, 15, 0.95);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(155, 93, 229, 0.3);
+  box-shadow: 0 20px 40px rgba(155, 93, 229, 0.2);
+}
+
+/* Battle Interface */
+.battle-card {
+  background: rgba(15, 15, 15, 0.9);
+  backdrop-filter: blur(15px);
+  border: 2px solid transparent;
+  background-clip: padding-box;
+  transition: all 0.3s ease;
+}
+
+.battle-card:hover {
+  border-color: rgba(155, 93, 229, 0.5);
+  transform: scale(1.02);
+}
+
+.battle-card.winner {
+  border-color: #6ef195;
+  box-shadow: 0 0 30px rgba(110, 241, 149, 0.4);
+}
+
+/* Drag and Drop */
+.drag-zone {
+  border: 2px dashed rgba(155, 93, 229, 0.5);
+  background: rgba(155, 93, 229, 0.1);
+  transition: all 0.3s ease;
+}
+
+.drag-zone.dragover {
+  border-color: #00f0ff;
+  background: rgba(0, 240, 255, 0.1);
+  transform: scale(1.02);
+}
+
+/* Navigation */
+.nav-link {
+  position: relative;
+  overflow: hidden;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #9b5de5, #00f0ff);
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 100%;
+}
+
+/* Outfit Grid */
+.outfit-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Vote Button Animation */
+.vote-btn {
+  position: relative;
+  overflow: hidden;
+}
+
+.vote-btn::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.3) 0%, transparent 70%);
+  transition: all 0.5s ease;
+  transform: translate(-50%, -50%);
+}
+
+.vote-btn:active::before {
+  width: 300px;
+  height: 300px;
+}
+
+/* AI Rating Display */
+.ai-rating {
+  background: linear-gradient(135deg, #9b5de5, #00f0ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+/* Confetti Animation */
+@keyframes confetti-fall {
+  0% {
+    transform: translateY(-100vh) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+.confetti {
+  position: fixed;
+  width: 10px;
+  height: 10px;
+  z-index: 1000;
+  pointer-events: none;
+  animation: confetti-fall 3s linear infinite;
+}
+
+/* Progress Bar */
+.progress-bar {
+  background: linear-gradient(90deg, #9b5de5, #00f0ff);
+  height: 6px;
+  border-radius: 3px;
+  transition: width 0.3s ease;
+}
+
+/* Floating Action Button */
+.fab {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #9b5de5, #00f0ff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 20px rgba(155, 93, 229, 0.4);
+  transition: all 0.3s ease;
+  z-index: 100;
+}
+
+.fab:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 30px rgba(155, 93, 229, 0.6);
+}
