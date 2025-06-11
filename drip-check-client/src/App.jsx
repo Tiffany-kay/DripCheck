@@ -43,7 +43,7 @@ function AppContent() {
       <Navigation />
 
       {/* Main Content */}
-      <main className="relative z-10">
+      <main className="relative z-20 pt-20">
         <AnimatePresence mode="wait">
           <Routes location={location} key={location.pathname}>
             <Route path="/" element={<LandingPage />} />

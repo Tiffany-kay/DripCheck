@@ -158,9 +158,13 @@ function HomePage() {
           >
             <Vote size={20} />
             <span>Vote & Donate 💚</span>
-          </motion.button>
-
-          <motion.button 
+          </motion.button>          <motion.button 
+            onClick={() => {
+              const marketplace = document.querySelector('[data-section="marketplace"]');
+              if (marketplace) {
+                marketplace.scrollIntoView({ behavior: 'smooth' });
+              }
+            }}
             className="glass-card px-8 py-3 rounded-full text-electric-cyan border-electric-cyan hover:bg-electric-cyan hover:text-noir transition-colors flex items-center space-x-2 text-lg"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
@@ -292,8 +296,11 @@ function HomePage() {
             </motion.h2>
             <p className="text-cloud-white/80 text-lg mb-6">
               Buy directly from creators with instant M-PESA payments
-            </p>
-            <motion.button 
+            </p>            <motion.button 
+              onClick={() => {
+                // Filter and show all for-sale items
+                console.log('Showing all marketplace items');
+              }}
               className="btn-primary px-8 py-3 rounded-full flex items-center space-x-2 mx-auto"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}

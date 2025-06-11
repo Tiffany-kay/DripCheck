@@ -232,8 +232,7 @@ function LandingPage() {
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ delay: 1.8 + index * 0.1 }}
                 whileHover={{ y: -10 }}
-              >
-                <div className="aspect-square relative overflow-hidden">
+              >                <div className="aspect-square relative overflow-hidden max-w-xs mx-auto">
                   <img 
                     src={outfit.image} 
                     alt="Featured outfit"

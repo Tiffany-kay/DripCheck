@@ -7,7 +7,7 @@ function Header() {
   const homeLink = isSignedIn ? '/home' : '/';
 
   return (
-    <header className="relative z-10 flex items-center justify-between p-6 glass-card mx-4 mt-4 neon-glow">
+    <header className="relative z-30 flex items-center justify-between p-6 glass-card mx-4 mt-4 neon-glow">
       <motion.div 
         className="flex items-center space-x-3"
         initial={{ opacity: 0, x: -20 }}

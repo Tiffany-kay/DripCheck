@@ -1,0 +1,13 @@
+# Production Environment Variables for Vercel
+# Add these to your Vercel project settings
+
+# 1. Go to https://vercel.com/dashboard
+# 2. Select your drip-check-tau project
+# 3. Go to Settings > Environment Variables
+# 4. Add these variables:
+
+VITE_CLERK_PUBLISHABLE_KEY=pk_test_c3Rhci1zaGVlcC02LmNsZXJrLmFjY291bnRzLmRldiQ
+VITE_API_URL=https://your-backend-url.railway.app
+VITE_NODE_ENV=production
+
+# After adding these, redeploy your project

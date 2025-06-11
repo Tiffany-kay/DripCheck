@@ -81,9 +81,8 @@ function Navigation() {
     setShowMarketplaceModal(false);
     // Show success feedback
   };
-
   return (
-    <nav className="relative z-10 mx-4 mt-4">
+    <nav className="relative z-30 mx-4 mt-4">
       <div className="glass-card px-6 py-4">
         <div className="flex justify-center items-center space-x-8">
           {navItems.map(({ path, icon: Icon, label, badge }) => (
