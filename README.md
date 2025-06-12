@@ -1,6 +1,6 @@
 # 🔥 DripCheck - Social Fashion Battle App
 
-**LIVE APP**: https://drip-check-tau.vercel.app/  
+**LIVE APP**: https://drip-check-mu.vercel.app/  
 **Backend API**: https://dripcheck-production.up.railway.app/
 
 A Gen Z fashion battle + thrift marketplace app where your drip meets purpose. Features:
@@ -15,7 +15,7 @@ A Gen Z fashion battle + thrift marketplace app where your drip meets purpose. F
 - 📱 **Mobile-First**: Responsive Gen Z design with vaporwave aesthetics
 
 ## 🚀 **Live URLs**
-- **Frontend (Vercel)**: https://drip-check-tau.vercel.app/
+- **Frontend (Vercel)**: https://drip-check-mu.vercel.app/
 - **Backend (Railway)**: https://dripcheck-production.up.railway.app/
 - **Health Check**: https://dripcheck-production.up.railway.app/api/health
 
@@ -76,4 +76,4 @@ Gen Z fashion enthusiasts in Kenya who want to:
 
 **Built with ❤️ for the Kenyan Gen Z fashion community**
 
-Ready to join the dripverse? → https://drip-check-tau.vercel.app/
+Ready to join the dripverse? → https://drip-check-mu.vercel.app/
